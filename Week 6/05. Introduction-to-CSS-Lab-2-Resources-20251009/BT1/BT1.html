@@ -2,28 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BT1 - CSS Selectors Practice</title>
-  <link rel="stylesheet" href="bt1.css">
+  <title>The priority of selectors</title>
+  <link rel="stylesheet" href="priority.css">
 </head>
 <body>
-  <h1 id="main-title" class="highlight">CSS Selector Priority & Pseudo Classes</h1>
 
-  <section id="priority-demo">
-    <h2>1. Selector Priority</h2>
-    <p class="text-sample">This paragraph is styled by multiple selectors.</p>
-  </section>
+  <MyCustomizeTag>
+    Here is customize tag
+  </MyCustomizeTag>
 
-  <section id="table-demo">
-    <h2>2. Odd and Even Rows using :nth-child()</h2>
-    <table>
-      <tr><th>No.</th><th>Name</th><th>Score</th></tr>
-      <tr><td>1</td><td>Alice</td><td>90</td></tr>
-      <tr><td>2</td><td>Bob</td><td>85</td></tr>
-      <tr><td>3</td><td>Charlie</td><td>95</td></tr>
-      <tr><td>4</td><td>Daisy</td><td>80</td></tr>
-      <tr><td>5</td><td>Edward</td><td>88</td></tr>
-    </table>
-  </section>
+  <div>The first paragraph.</div>
+  <div class="GroupFormat">The second paragraph.</div>
+
+  <div class="GroupFormat" id="TheHighestPriority">
+    The third paragraph.
+  </div>
+
+  <div>The fourth paragraph.</div>
+  <div class="GroupFormat">The fifth paragraph.</div>
+  <div class="GroupFormat">The sixth paragraph.</div>
+  <div>The seventh paragraph.</div>
+
 </body>
 </html>
