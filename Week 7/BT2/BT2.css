@@ -1,0 +1,41 @@
+/* Ẩn thông tin chi tiết ban đầu */
+.ProductDetails {
+  display: none;
+}
+
+/* Style cho ảnh sản phẩm */
+.Product img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #aaa;
+}
+
+/* Tên sản phẩm */
+.ProductName {
+  font-weight: bold;
+}
+
+/* Giá sản phẩm */
+.ProductPrice {
+  font-style: italic;
+}
+
+/* Tạo dấu gạch nối giữa tên và giá */
+.ProductPrice::before {
+  content: " - ";
+}
+
+/* Bố cục từng sản phẩm */
+.Product {
+  text-align: center;
+  width: 150px;
+  margin: 0px 20px;
+  float: left;
+  cursor: pointer;
+}
+
+/* Khi hover chuột vào ảnh, hiện thông tin sản phẩm */
+.Product:hover .ProductDetails {
+  display: block;
+}
