@@ -1,0 +1,59 @@
+/* -------------- 1. Selector Priority -------------- */
+
+/* Tag selector (yếu nhất) */
+p {
+  color: green;
+  font-size: 18px;
+}
+
+/* Class selector (mạnh hơn tag) */
+.text-sample {
+  color: blue;
+  font-weight: bold;
+}
+
+/* ID selector (mạnh nhất trong 3 loại này) */
+#priority-demo p {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Inline style (nếu có trong HTML) sẽ thắng tất cả */
+
+/* -------------- 2. :nth-child() for Odd/Even Rows -------------- */
+
+table {
+  width: 60%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #444;
+  padding: 8px;
+}
+
+/* :nth-child() pseudo-class */
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* hàng chẵn */
+}
+
+tr:nth-child(odd) {
+  background-color: #e0f7fa; /* hàng lẻ */
+}
+
+th {
+  background-color: #00695c;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+section {
+  margin: 20px;
+}
