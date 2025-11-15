@@ -23,7 +23,6 @@ if (month == null || month == "" || isNaN(month) || month < 1 || month > 12) {
             days = 30;
             break;
         case 2:
-            // Check leap year
             if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
                 days = 29;
             else
